@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Mit főzzek ma?</h1>
+        <p>
+    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Hús</button>
+  <div id="demo" class="collapse">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  </div>
+    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Gyümölcs</button>
+  <div id="demo" class="collapse">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  </div>
+    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Zöldség</button>
+  <div id="demo" class="collapse">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  </div>
+    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Simple collapsible</button>
+  <div id="demo" class="collapse">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  </div>
+            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Simple collapsible</button>
+  <div id="demo" class="collapse">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  </div>
+            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Simple collapsible</button>
+  <div id="demo" class="collapse">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  </div>
+  
+  </p>
+          
+        <form method="POST">
+            <div class="form-group">
+                <label for="ingredients">Adja meg az otthoni alapanyagokat (vesszővel elválasztva):</label>
+                <input type="text" class="form-control" id="ingredients" name="ingredients">
+            </div>
+            <button type="submit" class="btn btn-primary">Keresés</button>
+        </form>
+        <br>
+        <h2>Eredmények:</h2>
+        <ul>
+            {% for recipe in recipes %}
+            <li>
+                <h3>{{ recipe[0] }}</h3>
+                <p>Elkészítési idő: {{ recipe[1] }} perc</p>
+                <p>Recept: {{ recipe[2] }}</p>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+    <footer>
+        <p style="color: blue;"><img src="Logo_PD's_fisheye_16x16.jpg" alt="Leíró szöveg" width="59" height="59"> Copyright © 2023 ProDevs company. All rights reserved. kopirájtkriptobájt!</p>
+        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo1">Simple collapsible</button>
+        <div id="demo1" class="collapse">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+        <div id="demo1"></div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

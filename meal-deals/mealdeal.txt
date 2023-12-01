@@ -1,0 +1,71 @@
+1.oldal---  	regisztráció		*  hozzávalók   *  receptek  *  
+fejléc		belépés			*		* 
+
+
+
+				kép
+
+
+
+lábjegyzet    céges cuccok
+--------------------------------------------------------------------------
+
+
+Belépés		     	USER NAME vagy EMAIL
+			PASSWORD			LOGIN FORM
+
+Regisztráció		Vezetéknév
+			Keresztnév
+			Username   *
+			Email	   *
+			Cím
+			Password   *
+
+-----------------------------------------------------------
+Admin: Kezeli az adatokat: - felvihet/módosíthat/törölhet
+       és a felhasználókat: törölhet(ha nem lépett x ideig be a rendszerbe, akkor email küldése, majd törlés)
+------------------------------------------------------------
+
+User: a saját személyes adatait és az általa felvett hozzávalókat és recepteket módosíthatja/törölheti/felveheti
+	
+-------------------------------------------------------------
+loginform minták(ha kell)
+
+	https://www.jotform.com/hu/form-templates
+	https://startlogin.hu/auth/realms/StartLogin/login-actions/registration?client_id=nosalty&tab_id=wlNrskkVj3M
+-----------------------------------------------------------------
+
+fő oldal:    bootstrap(collapse)   hozzávaló kategóriák :  	-szénhidrát
+							   	-gyümölcs
+								-zöldség
+								-magvak(mogyoró, mák, kukorica)
+								-hús,hal
+								-fűszerek
+								-kiegészítő (mustár, pirosarany)
+
+
+
+		A collapse-on belül: kép+megnevezés (button)
+
+
+					KERESÉS gomb
+
+-------------------------------------------------------------------
+
+
+
+
+
+			
+tiliczkitibor@ktch.hu
+gyurearpad@ktch.hu
+
+
+BACKEND:
+
+	A LOGIN formok mezőinek validálása és adatellenőrzése: email,tel.szám és password formátum
+
+	Ha a user elfelejtette a jelszavát: email küldése amiben egy ideiglenes jelszót küldünk el neki
+
+	
+
